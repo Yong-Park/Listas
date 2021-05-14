@@ -31,6 +31,10 @@ class Adaptador(private val clickListener:(Int) -> Unit): RecyclerView.Adapter<A
     fun getItem(position: Int):String{
         return items[position]
     }
+    //par eliminar los item que se seleccionaron
+    fun removeItem(position: Int){
+        this.items.removeAt(position)
+    }
 
     class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bind(item:String, listener:(Int)->Unit) = with(itemView){
