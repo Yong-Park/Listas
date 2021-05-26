@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         showItemClick(clickListener)
     }
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         var num= 1
         super.onCreate(savedInstanceState)
